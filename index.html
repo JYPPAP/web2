@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이템매니아</title>
+  <!-- 파비콘 추가하기 -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- 사이드바 -->
+    <nav class="nav">
+      <div class="nav_content">
+        <ul>
+          <li class="nav_content_item">
+            <div class="nav_content_item_image">
+              <p>나의 개인정보</p>
+            </div>
+          </li>
+          <li class="nav_content_item">
+            <div class="nav_content_item_image">
+              <p>문서 그림</p>
+            </div>
+          </li>
+          <li class="nav_content_item">
+            <div class="nav_content_item_image">
+              <p>게임패드 그림</p>
+            </div>
+          </li>
+          <li class="nav_content_item">
+            <div class="nav_content_item_image">
+              <p>설문지 그림</p>
+            </div>
+          </li>
+        </ul>
+        <div class="nav_pop">
+        </div>
+      </div>
+      <div class="to_top">
+        <a href="javascript:;" class="arrow_icon">
+          <span class="left_bar"></span>
+          <span class="right_bar"></span>
+        </a>
+        TOP
+      </div>
+    </nav>
+    <!-- 사이드바-end -->
+    <!-- 헤더 -->
+    <header class="header">
+      <!-- 탑 배너 -->
+      <div class="top_banner">
+        <div class="center">
+          <img src="images/banner_closed.png" alt="탑배너 닫기버튼" class="top_banner_close">
+        </div>
+      </div>
+
+      <!-- 탑 링크 -->
+      <div class="top_link_wrap">
+        <div class="top_link center">
+          <!-- 탑 링크 좌측 -->
+          <div class="top_link_left">
+            <ul>
+              <li class="top_link_left_item">
+                <a href="javascript:;">아이템매니아 포털</a></li>
+              <li class="top_link_left_item">
+                <a href="javascript:;">아이템 거래</a></li>
+              <li class="top_link_left_item">
+                <a href="javascript:;">바로접속<div class="top_link_left_item_on"></div></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 탑 링크 우측 -->
+          <div class="top_link_right">
+            <ul>
+              <li class="top_link_right_item"><a href="javascript:;">포인트몰</a></li>
+              <li class="top_link_right_item"><a href="javascript:;">모바일서비스</a></li>
+              <li class="top_link_right_item"><a href="javascript:;">모바일매니아</a></li>
+              <li class="top_link_right_item"><a href="javascript:;">이벤트</a></li>
+              <li class="top_link_right_item"><a href="javascript:;">IMI스토리</a></li>
+              <li class="top_link_right_item"><a href="javascript:;">게임정보</a></li>
+              <li class="top_link_right_item"><a href="javascript:;">로그아웃</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 탑 링크-end -->
+      <!-- 탑 내비게이션 -->
+      <div class="top_nav center">
+        <!-- 탑 로고 -->
+        <div class="top_logo"><a href="javascript:;"><img src="./images/top_logo.png" alt="아이템매니아 로고"></a></div>
+        <!-- 탑 로고-end -->
+        <!-- 검색창 -->
+        <div class="top_search">
+          <div class="sellBtn">
+            <input type="radio" name="searchCheck" value="sell" id="sellCheck">
+            <label for="sellCheck">팝니다</label>
+          </div>
+          <div class="buyBtn">
+            <input type="radio" name="searchCheck" value="buy" id="buyCheck" checked>
+            <label for="buyCheck">삽니다</label>
+          </div>
+          <input type="search" name="searchBar" id="searchBar" placeholder="게임명을 입력해주세요">
+          <div class="searchIcon"></div>
+        </div>
+        <!-- 검색창-end -->
+        <!-- 인기 검색어 -->
+        <div class="top_recent">
+          <ul>
+            <li class="top_recent_item"><a href="javascript:;">리니지</a></li>
+            <li class="top_recent_item"><a href="javascript:;">리니지M</a></li>
+            <li class="top_recent_item"><a href="javascript:;">던전앤파이터</a></li>
+            <li class="top_recent_item"><a href="javascript:;">검은사막모바일</a></li>
+            <li class="top_recent_item"><a href="javascript:;">메이플스토리</a></li>
+            <li class="top_recent_item"><a href="javascript:;">바람의나라</a></li>
+            <li class="top_recent_item"><a href="javascript:;">마비노기영웅전</a></li>
+          </ul>
+          <div class="top_recent_btn">
+            <div class="top_recent_btn_left"></div>
+            <div class="top_recent_btn_right"></div>
+          </div>
+        </div>
+        <!-- 인기 검색어-end -->
+      </div>
+      <!-- 탑 내비게이션-end -->
+    </header>
+    <!-- 헤더-end -->
+    <!-- 메인메뉴 -->
+    <div class="menu_wrap">
+      <nav class="menu center">
+        <ul>
+          <li><a href="javascirpt:;">판매등록</a></li>
+          <li><a href="javascirpt:;">구매등록</a></li>
+          <li><a href="javascirpt:;">마이룸</a></li>
+          <li><a href="javascirpt:;">상품권몰</a></li>
+          <li><a href="javascirpt:;">이벤트</a></li>
+          <li><a href="javascirpt:;">고객센터</a></li>
+          <li><a href="javascirpt:;">이용안내</a></li>
+        </ul>
+        <div class="menu_icon">
+          <a href="javascript:;">
+            <div class="menu_icon_notice">
+              <p id="notice_number">10</p>
+            </div>
+          </a>
+          <a href="javascript:;">
+            <div class="menu_icon_burger"></div>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!-- main_menu-end -->
+
+    <div class="banner1">
+      <div class="sell_wrap center">
+        <div class="sell">
+          <ul class="sell_list">
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>내 마일리지</span>
+              </a>
+            </li>
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>상담내역보기</span>
+              </a>
+            </li>
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>판매관련물품</span>
+              </a>
+            </li>
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>구매관련물품</span>
+              </a>
+            </li>
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>마일리지출금</span>
+              </a>
+            </li>
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>수수료계산기</span>
+              </a>
+            </li>
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>마일리지충전</span>
+              </a>
+            </li>
+            <li class="sell_list_item">
+              <a href="javascript:;">
+                <div class="sprite_image"></div>
+                <span>포인트몰</span>
+              </a>
+            </li>
+          </ul>
+          <div class="sell_setBtn"></div>
+        </div>
+        <div class="bannerBtn">
+          <div class="bannerBtn1"></div>
+          <div class="bannerBtn2"></div>
+          <div class="bannerBtn3"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 메인배너-end -->
+    <!-- main -->
+    <div class="main">
+      <div class="center">
+        <!-- 파워물품 -->
+        <section class="power">
+          <h1>파워물품&nbsp;<span>ZONE</span></span></h1>
+          <a href="javascirpt:;">파워등록권 경매신청</a>
+          <div class="power_item_wrap">
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>리니지</h3>
+              <p>10만당 970원</p>
+              <p>가드리아</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>붉은보석</h3>
+              <p>10만당 970원</p>
+              <p>프란델</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>듀랑고</h3>
+              <p>10만당 970원</p>
+              <p>아시아알파</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>데빌리언</h3>
+              <p>10만당 970원</p>
+              <p>볼튼</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>아이온</h3>
+              <p>10만당 970원</p>
+              <p>포에타</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>테라</h3>
+              <p>10만당 970원</p>
+              <p>아룬의영광</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>뮤템페스트</h3>
+              <p>10만당 970원</p>
+              <p>가드리아</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>검은사막</h3>
+              <p>10만당 970원</p>
+              <p>프란델</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>반반</h3>
+              <p>10만당 970원</p>
+              <p>아시아알파</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>혈검</h3>
+              <p>10만당 970원</p>
+              <p>볼튼</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>마비노기</h3>
+              <p>10만당 970원</p>
+              <p>포에타</p>
+            </div>
+            <div class="power_item">
+              <div class="ribbon">
+                <span>POWER</span>
+              </div>
+              <h3>테라</h3>
+              <p>10만당 970원</p>
+              <p>아룬의영광</p>
+            </div>
+          </div>
+          <ul class="power_slide">
+            <li class="power_slide_btn"></li>
+            <li class="power_slide_btn"></li>
+            <li class="power_slide_btn"></li>
+            <li class="power_slide_btn"></li>
+          </ul>
+        </section>
+        <!-- 파워물품-end -->
+        <!-- 시세정보 -->
+        <section class="gInfo">
+          <h2>게임별 시세정보</h2>
+          <ul class="gInfo_list">
+            <li class="gInfo_list_item on">리니지</li>
+            <li class="gInfo_list_item ">던전앤파이터</li>
+            <li class="gInfo_list_item">메이플스토리</li>
+            <li class="gInfo_list_item">바람의나라</li>
+            <li class="gInfo_list_item">블레이드앤소울</li>
+            <li class="gInfo_list_item">아이온</li>
+          </ul>
+
+          <div class="gInfo_recent">
+            <div class="gInfo_recent_price">
+              <table>
+                <tr>
+                  <th colspan="2">서버별 최저가 현황</th>
+                </tr>
+                <tr class="on">
+                  <td>발록</td>
+                  <td>1246</td>
+                </tr>
+                <tr>
+                  <td>서큐버스</td>
+                  <td>9000</td>
+                </tr>
+                <tr>
+                  <td>발센</td>
+                  <td>4300</td>
+                </tr>
+                <tr>
+                  <td>피닉스</td>
+                  <td>8500</td>
+                </tr>
+              </table>
+              <div class="normal_btn">
+                <div class="normal_btn_left"></div>
+                <div class="normal_btn_right"></div>
+              </div>
+            </div>
+
+            <div class="gInfo_recent_detail">
+              <h5>리니지</h5>
+              <h5>발록</h5>
+              <p>(기준 1000만 아데나)</p>
+              <div class="gInfo_recent_detail_chart"></div>
+              <ul class="gInfo_recent_detail_num">
+                <li class="gInfo_recent_detail_num_item">1.26</li>
+                <li class="gInfo_recent_detail_num_item">1.27</li>
+                <li class="gInfo_recent_detail_num_item">1.28</li>
+                <li class="gInfo_recent_detail_num_item">1.29</li>
+                <li class="gInfo_recent_detail_num_item">1.30</li>
+                <li class="gInfo_recent_detail_num_item">1.31</li>
+                <li class="gInfo_recent_detail_num_item">2.1</li>
+                <li class="gInfo_recent_detail_num_item">2.2</li>
+                <li class="gInfo_recent_detail_num_item">2.3</li>
+                <li class="gInfo_recent_detail_num_item">2.4</li>
+                <li class="gInfo_recent_detail_num_item">2.5</li>
+                <li class="gInfo_recent_detail_num_item">2.6</li>
+                <li class="gInfo_recent_detail_num_item">2.6</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        <!-- 시세정보-end -->
+        <!-- 마일리지 -->
+        <section class="mile">
+          <div class="mile_header">
+            <h2>마일리지 충전</h2>
+            <div class="normal_btn">
+              <div class="normal_btn_left"></div>
+              <div class="normal_btn_right"></div>
+            </div>
+          </div>
+          <div class="mile_btn"></div>
+          <ul class="mile_list">
+            <li class="mile_list_item">
+              <a href="javascript:;">
+                <span>문화상품권</span>
+                <div class="list_image"></div>
+              </a>
+            </li>
+            <li class="mile_list_item">
+              <a href="javascript:;">
+                <span>쇼핑문화상품권</span>
+                <div class="list_image"></div>
+              </a>
+            </li>
+            <li class="mile_list_item">
+              <a href="javascript:;">
+                <span>해피머니상품권</span>
+                <div class="list_image"></div>
+              </a>
+            </li>
+            <li class="mile_list_item">
+              <a href="javascript:;">
+                <span>에그머니</span>
+                <div class="list_image"></div>
+              </a>
+            </li>
+            <li class="mile_list_item">
+              <a href="javascript:;">
+                <span>도서문화상품권</span>
+                <div class="list_image"></div>
+              </a>
+            </li>
+            <li class="mile_list_item">
+              <a href="javascript:;">
+                <span>스마트문상(게임문상)</span>
+                <div class="list_image"></div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- 마일리지-end -->
+        <!-- 핫게임 -->
+        <section class="hot">
+          <h2>매니아 핫게임</h2>
+          <div class="plus_btn"></div>
+          <ul class="hot_list">
+            <li class="hot_list_item">
+              <div class="item_image"></div>
+              <p>페이트 그랜드 오더</p>
+              <div class="star">
+                <div class="star_image"></div>
+                <p class="point">8. 00</p>
+              </div>
+              <div class="cup">할인쿠폰</div>
+              <div class="sell">거래하기</div>
+            </li>
+            <li class="hot_list_item">
+              <div class="item_image"></div>
+              <p>대항해의 길</p>
+              <div class="star">
+                <div class="star_image"></div>
+                <p class="point">8. 00</p>
+              </div>
+              <div class="cup">할인쿠폰</div>
+              <div class="sell">거래하기</div>
+            </li>
+            <li class="hot_list_item">
+              <div class="item_image"></div>
+              <p>천애명월도</p>
+              <div class="star">
+                <div class="star_image"></div>
+                <p class="point">8. 00</p>
+              </div>
+              <div class="cup">할인쿠폰</div>
+              <div class="sell">거래하기</div>
+            </li>
+            <li class="hot_list_item">
+              <div class="item_image"></div>
+              <p>테라M</p>
+              <div class="star">
+                <div class="star_image"></div>
+                <p class="point">8. 00</p>
+              </div>
+              <div class="cup">할인쿠폰</div>
+              <div class="sell">거래하기</div>
+            </li>
+            <li class="hot_list_item">
+              <div class="item_image"></div>
+              <p>음양사</p>
+              <div class="star">
+                <div class="star_image"></div>
+                <p class="point">8. 00</p>
+              </div>
+              <div class="cup">할인쿠폰</div>
+              <div class="sell">거래하기</div>
+            </li>
+          </ul>
+        </section>
+        <!-- hot-end -->
+        <!-- 게임 랭킹 -->
+        <section class="rank">
+          <h2>게임순위</h2>
+          <div class="plus_btn"></div>
+          <ul class="rank_list_left">
+            <li class="rank_list_item">
+              <p class="rank_num">1</p>
+              <a href="javascript:;">
+                <p class="rank_name">메이플스토리</p>
+              </a>
+              <div class="rank_icon"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">2</p>
+              <a href="javascript:;">
+                <p class="rank_name">리니지M</p>
+              </a>
+              <div class="rank_icon rank_icon_up"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">3</p>
+              <a href="javascript:;">
+                <p class="rank_name">던전앤파이터</p>
+              </a>
+              <div class="rank_icon rank_icon_down"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">4</p>
+              <a href="javascript:;">
+                <p class="rank_name">리니지</p>
+              </a>
+              <div class="rank_icon rank_icon_up"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">5</p>
+              <a href="javascript:;">
+                <p class="rank_name">바람의 나라</p>
+              </a>
+              <div class="rank_icon rank_icon_down"></div>
+            </li>
+          </ul>
+          <ul class="rank_list_right">
+            <li class="rank_list_item">
+              <p class="rank_num">6</p>
+              <a href="javascript:;">
+                <p class="rank_name">블레이드앤소울</p>
+              </a>
+              <div class="rank_icon"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">7</p>
+              <a href="javascript:;">
+                <p class="rank_name">마비노기</p>
+              </a>
+              <div class="rank_icon rank_icon_up"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">8</p>
+              <a href="javascript:;">
+                <p class="rank_name">거상 </p>
+              </a>
+              <div class="rank_icon rank_icon_down"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">9</p>
+              <a href="javascript:;">
+                <p class="rank_name">라그나로크제로</p>
+              </a>
+              <div class="rank_icon rank_icon_up"></div>
+            </li>
+            <li class="rank_list_item">
+              <p class="rank_num">10</p>
+              <a href="javascript:;">
+                <p class="rank_name">가디우스</p>
+              </a>
+              <div class="rank_icon rank_icon_down"></div>
+            </li>
+          </ul>
+        </section>
+        <!-- rank-end -->
+
+        <!-- 배너2 -->
+        <section class="banner2"></section>
+        <!-- 배너3 -->
+        <section class="banner3"></section>
+
+        <!-- 게임매니아 -->
+        <section class="mania">
+          <h2>게임매니아</h2>
+          <a href="javascript:;">
+            <div class="mania_banner">
+          </a>
+            <div class="banner_slide">
+              <div class="slide_btn"></div>
+              <div class="slide_btn"></div>
+              <div class="slide_btn"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 매니아서비스 -->
+        <section class="service">
+          <h2>매니아서비스</h2>
+          <div class="normal_btn">
+            <div class="normal_btn_left"></div>
+            <div class="normal_btn_right"></div>
+          </div>
+          <a href="javascript:;">
+            <div class="service_image"></div>
+          </a>
+        </section>
+
+        <!-- 게임 뉴스 -->
+        <section class="news">
+          <h2>최신 게임뉴스</h2>
+          <div class="plus_btn"></div>
+          <ul class="news_list">
+            <li class="news_list_item">
+              <a href="javascript:;">
+              • [당첨자 안내] 모바일앱 쇼핑포인트몰 오픈이벤트
+              </a>
+              <span>게임동아</span>
+            </li>
+            <li class="news_list_item">
+              <a href="javascript:;">
+              • [당첨자 안내] 배틀그라운드 오픈기념 이벤트
+              </a>
+              <span>게임메카</span>
+            </li>
+            <li class="news_list_item">
+              <a href="javascript:;">
+              • [당첨자 안내] 2017년 10월 바로접속 해보기
+              </a>
+              <span>게임조선</span>
+            </li>
+            <li class="news_list_item">
+              <a href="javascript:;">
+              • [당첨자 안내] 모바일앱 쇼핑포인트몰 시작
+              </a>
+              <span>게임동아</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 전화상담 -->
+        <aside class="call">
+          <h4>전화 상담안내</h4>
+          <span>1544&#45;8278</span>
+          <b>365일 24시간 연중무휴</b>
+        </aside>
+
+        <!-- 공지사항 -->
+        <aside class="notice">
+          <h4>공지사항</h4>
+          <ul class="notice_list">
+            <li class="notice_list_item">
+              <a href="javascript:;">• 모바일앱 쇼핑포인트몰..쇼핑포인트몰..</a>
+            </li>
+            <li class="notice_list_item">
+              <a href="javascript:;">• [배틀그라운드 오픈기념 바로접속..</a>
+            </li>
+            <li class="notice_list_item">
+              <a href="javascript:;">• 017년 10월 바로접속 바로접속 바로접속바로접속...</a>
+            </li>
+        </aside>
+
+        <!-- 하단 퀵 메뉴 -->
+        <aside class="quick">
+          <ul class="quick_list">
+            <li class="quick_list_item">
+              <a href="javascript:;">
+                <div class="quick_image"></div>
+                <p class="quick_name">온라인 1:1 상담</p>
+              </a>
+            </li>
+            <li class="quick_list_item">
+              <a href="javascript:;">
+                <div class="quick_image"></div>
+                <p class="quick_name">FAQ</p>
+              </a>
+            </li>
+            <li class="quick_list_item">
+              <a href="javascript:;">
+                <div class="quick_image"></div>
+                <p class="quick_name">나의 질문과 답변</p>
+              </a>
+            </li>
+            <li class="quick_list_item">
+              <a href="javascript:;">
+                <div class="quick_image"></div>
+                <p class="quick_name">초보자 가이드</p>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </main>
+    <!-- main-end -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- footer-end -->
+      <div class="footer_link center">
+        <ul class="footer_link_list">
+          <li class="footer_link_list_item"><a href="javascript:;">회사소개</a></li>
+          <li class="footer_link_list_item"><a href="javascript:;">이용약관</a></li>
+          <li class="footer_link_list_item"><a href="javascript:;">개인정보취급방침</a></li>
+          <li class="footer_link_list_item"><a href="javascript:;">청소년 보호정책</a></li>
+          <li class="footer_link_list_item"><a href="javascript:;">이메일 수집거부</a></li>
+          <li class="footer_link_list_item"><a href="javascript:;">채용안내</a></li>
+          <li class="footer_link_list_item"><a href="javascript:;">제휴문의</a></li>
+          <li class="footer_link_list_item"><a href="javascript:;">고객감동센터</a></li>
+        </ul>
+      </div>
+      <hr>
+      <div class="footer_info center">
+        <!-- footer_info-end -->
+          <img src="images/foot_logo.png" alt="하단아이엠아이로고" class="fLogo">
+        <div class="fInfo">
+          <span>&#40;주&#41; 아이엠아이 대표이사&#58;김정식&nbsp;</span>
+          <address>전주시 덕진구 가리내로 56 아이엠아이빌딩&nbsp;</address>
+          <span>고객감동센터&#58;1544&#45;8278&nbsp;</span>
+          <span>Fax&#58;0505&#45;247&#45;8278</span>
+          <br>
+          <span>통신판매업신고번호&#58;제2002&#45;00015호&nbsp;</span>
+          <span>부가통신사업신고필증 신고번호 제216호&nbsp;</span>
+          <span>Copyright &copy; IMI. All rights reserved.</span>
+          <br>
+          <span>아이템매니아는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 아이템매니아는 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+
+  </div>
+</body>
+
+</html>

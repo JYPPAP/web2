@@ -1,0 +1,2152 @@
+@charset "utf-8";
+
+/************************************
+    초기화
+************************************/
+body {
+line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+a { color: inherit; text-decoration: none
+}
+
+/* 초기화 임시 2 */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+ html { font-family: "맑은 고딕", "Malgun Gothic", "돋움", "dotum", sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/* 초기화 임시 2 */
+
+/************************************
+    스타일 가이드
+************************************/
+/* Text style guide */
+/* black */
+$black : #1d1d1d;
+$black1 : #636363;
+$black2 : #767676;
+$black3 : #9f9f9f;
+/* blue */
+$blue : #159efd;
+/* red */
+$red : #ff2400;
+/* green */
+$green : #00c73c;
+/* white */
+$white : #fff;
+
+/* Text button guide */
+$btn_white1 : #9b9b9b;
+$btn_white2 : #a9bcce;
+
+$btn_blue : #a9bcce;
+$btn_gray : #b1b1b1;
+
+/* Table guide */
+$box1 : #e0e0e0;
+$box2 : #bec8d8;
+$box3 : #dee3eb;
+/************************************
+    기본 레이아웃 및 색
+************************************/
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* sidebar */
+.nav {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 55px;
+  background-color: #909299;
+  &_content {
+    position: absolute;
+    top: 305px;
+    width: 100%;
+    height: 240px;
+  }
+}
+.main { 
+  width: 100%;
+  background-color: #f2f4f7;
+  // display: block;
+}
+.center {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* header */
+.top_banner {
+  width: 100%;
+  max-width: 2560px;
+  height: 80px;
+  margin: 0 auto;
+}
+.top_link_wrap {
+  width: 100%;
+  height: 30px;
+  background-color: #e3e3e3;
+}
+.top_link {
+  height: 100%;
+  letter-spacing: -1px;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  &_left {
+    float: left;
+    height: 100%;
+    width: 295px;
+  }
+  &_right {
+    float: right;
+    height: 100%;
+    width: 575px;
+  }
+}
+.top_nav {
+  height: 140px;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.top_logo {
+  float: left;
+  width: 195px;
+  height: 100%;
+}
+.top_search {
+  float: left;
+  height: 50px;
+  width: calc(100% - 390px);
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+.top_recent {
+  float: left;
+  height: 16px;
+  width: calc(100% - 400px);
+  margin-left: 10px;
+  letter-spacing: -1px;
+}
+
+/* 메인 */
+.menu_wrap {
+  width: 100%;
+  height: 45px;
+  background-color: #159efd;
+  margin: 0 auto;
+}
+.menu {
+  height: 100%;
+}
+.banner1 {
+  width: 100%;
+  height: 180px;
+}
+.sell_wrap {
+  height: 100%;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.sell {
+  float: right;
+  width: 380px;
+  height: 100%;
+}
+/* #### */
+.power {
+  width: 1080px;
+  height: 324px;
+}
+/* #### */
+.gInfo, .mile {
+  height: 290px;
+}
+.gInfo { width: 690px;}
+.mile { width: 380px;}
+/* #### */
+.hot {
+  width: 690px;
+  height: 270px;
+}
+.rank {
+  width: 380px;
+  height: 205px;
+}
+.banner2 {
+  width: 380px;
+  height: 55px;
+}
+/* #### */
+.banner3 {
+  width: 1080px;
+  height: 80px;
+}
+/* #### */
+.mania, .service, .news {
+  height: 185px;
+}
+.mania { width: 350px;}
+.service { width: 330px;}
+.news { width: 380px;}
+/* #### */
+.call, .notice, .quick { height: 120px; }
+.call { width: 350px;}
+.notice { width: 330px;}
+.quick { width: 380px;}
+/* #### */
+.gInfo, .hot, .mania, .service, .call, .notice { margin-right: 10px;}
+
+  .mania, .service, .news {
+    float: left;
+    margin-bottom: 20px;
+  }
+
+/* footer */
+footer {
+  background-color: #616161;
+  width: 100%;
+  height: 153px;
+  hr { background-color: #767676;}
+  &_link {
+    width: 100%;
+    height: 43px;
+  }
+  &_info {
+    width: 100%;
+    height: 110px;
+  }
+}
+
+/************************************
+    사이드바
+************************************/
+.nav {
+  @media (max-width: 1230px) {
+    display: none;
+  }
+  &_content {
+    &_item {
+      width: 55px;
+      height: 60px;
+      border-bottom: 1px solid #a4a4a4;
+      position: relative;
+      &_image {
+        position: absolute;
+        /* 세로 중앙정렬의 방법 1 */
+/*         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%); */
+        /* 세로 중앙정렬의 방법 2
+        너비와 높이값이 고정값이어야 한다는 단점이 존재함. */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        background-image: url(../images/re_sprite_v02.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        p {
+          color: $black3;
+          letter-spacing: -1px;
+          background: #fff;
+          display: block;
+          visibility: hidden;
+          width: 80px;
+          font-size: 12px;
+          text-align: center;
+          color: #000;
+          padding: 10px 0;
+          position: relative;
+          left: -85px;
+          z-index: 1;
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 10;
+            border: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            margin-top: -5px;
+            top: 50%;
+            border-left: 5px solid #fff;
+            left: auto;
+            right: -5px;
+          }
+        }
+        &:hover {
+          p{
+            visibility: visible;
+          }
+        }
+      }
+      &:nth-child(1) &_image {
+        width: 28px;
+        height: 32px;
+        background-position: -332px -42px;
+      }
+      &:nth-child(2) &_image {
+        width: 24px;
+        height: 30px;
+        background-position: -370px -42px;
+      }
+      &:nth-child(3) &_image {
+        width: 38px;
+        height: 33px;
+        background-position: -404px -42px;
+      }
+      &:nth-child(4) &_image {
+        width: 34px;
+        height: 29px;
+        background-position: -452px -42px;
+      }
+    }
+  }
+  &_pop {
+    position: absolute;
+    width: 12px;
+    height: 53px;
+    top: 290px;
+    right: 55px;
+    background-image: url(../images/re_sprite_v02.png);
+    background-repeat: no-repeat;
+    background-position: -10px -85px;
+    cursor: pointer;
+  }
+  .to_top {
+    position: absolute;
+    bottom: 153px;
+    width: 57px;
+    height: 60px;
+    background-color: #0475e0;
+    text-align: center;
+    color: $white;
+    font-size: 12px;
+    letter-spacing: -1px;
+    /* 화살표 */
+    .arrow_icon {
+      height: 1em;
+      width: 2.8em;
+      display: block;
+      margin: 20px auto 0;
+      position: relative;
+      cursor: pointer;
+      border-radius: 4px;
+      .left_bar {
+        position: absolute;
+        left: 14px;
+        width: 10px;
+        height: 5px;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        border-radius: 2px;
+        &:after {
+          content: '';
+          background-color: #fff;
+          width: 10px;
+          height: 1px;
+          display: block;
+          float: right;
+          border-radius: 6px 10px 10px 6px;
+        }
+      }
+      .right_bar {
+        position: absolute;
+        left: 10px;
+        height: 5px;
+        transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        &:after {
+          content: '';
+          background-color: #fff;
+          width: 10px;
+          height: 1px;
+          display: block;
+          float: right;
+          border-radius: 10px 6px 6px 10px;
+        }
+      }
+    }
+  }
+}
+
+/************************************
+    탑
+************************************/
+.top_banner {
+  background-image: url(../images/2560x80_top_banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  .center {
+    position: relative;
+  }
+  &_close {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    right: 0;
+    top: 26px;
+    cursor: pointer;
+  }
+}
+
+.top_link {
+  // 왼쪽 링크
+  &_left {
+    ul {
+      ::after {
+        content: '';
+        clear: both;
+        display: block;
+      }
+    }
+    &_item {
+      float: left;
+      color: $black2;
+      font-size: 11px;
+      text-align: center;
+      line-height: 30px;
+      letter-spacing: -1px;
+      cursor: pointer;
+      &:nth-child(1) {
+        width: 110px;
+        background-color: #fff;
+      }
+      &:nth-child(2) { width: 80px;}
+      &:nth-child(3) {
+        width: 105px;
+        text-align: left;
+      }
+      /* 나중에 위치 수정이 필요함. */
+      &_on {
+        position: relative;
+        top: 4px;
+        display: inline-block;
+        margin-left: 3px;
+        width: 48px;
+        height: 16px;
+        background-image: url(../images/re_sprite_v02.png);
+        background-repeat: no-repeat;
+        background-position: -365px -10px;
+      }
+    }
+  }
+  // 오른쪽 링크
+  &_right {
+    ul {
+      ::after {
+        content: '';
+        clear: both;
+        display: block;
+      }
+    }
+    &_item {
+      float: left;
+      color: $black1;
+      font-size: 12px;
+      text-align: center;
+      line-height: 30px;
+      position: relative;
+      cursor: pointer;
+      &:after {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        height: 12px;
+        width: 100%;
+        border-right: 1px solid $black2;
+      }
+      &:last-child:after {
+        border-right: 0;
+      }
+      &:nth-child(1) { width: 75px;}
+      &:nth-child(2) { width: 100px;}
+      &:nth-child(3) { width: 100px;}
+      &:nth-child(4) { width: 70px;}
+      &:nth-child(5) { width: 80px;}
+      &:nth-child(6) { width: 75px;}
+      &:nth-child(7) { width: 75px; border-right: none;}
+    }
+  }
+}
+.top_nav {
+  .top_search {
+    position: relative;
+    border: 5px solid $blue;
+    border-right: 40px solid $blue;
+    .sellBtn, .buyBtn {
+      display: inline-block;
+      font-weight: bold;
+      padding: 11px;
+      background-color: #fff;
+      height: 100%;
+
+      input[type='radio'],
+      input[type='radio']:checked {
+        cursor: pointer;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        margin-right: 3px;
+
+      }
+      label {
+        cursor: pointer;
+      }
+    }
+    .sellBtn {
+      color: $blue;
+      margin-left: 10px;
+      input[type='radio'] {
+        background-color: #fff;
+        outline: 2px solid $blue;
+        outline-offset: 2px;
+        &:checked {
+          background-color: $blue;
+        }
+      }
+    }
+    .buyBtn {
+      color: $green;
+      margin-right: 20px;
+      input[type='radio'] {
+        background-color: #fff;
+        outline: 2px solid $green;
+        outline-offset: 2px;
+        &:checked {
+          background-color: $green;
+        }
+      }
+    }
+    #searchBar {
+      width: 65%;
+      height: 94%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .searchIcon{
+      position: absolute;
+      top: 0;
+      right: -35px;
+      height: 40px;
+      width: 5%;
+      background-color: $blue;
+      background-image: url(../images/re_sprite_v02.png);
+      background-position: -5px -2px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+  .top_recent {
+    position: relative;
+    &_item {
+      display: inline-block;
+      margin-right: 18px;
+      color: $black2;
+      font-size: 12px;
+      letter-spacing: -1px;
+      cursor: pointer;
+    }
+    &_btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 16px;
+      width: 31px;
+      cursor: pointer;
+      &_left {
+        float: left;
+        width: 14px;
+        height: 16px;
+        background-image: url(../images/re_sprite_v02.png);
+        background-repeat: no-repeat;
+        background-position: -42px -10px;
+      }
+      &_right {
+        float: left;
+        width: 17px;
+        height: 16px;
+        background-image: url(../images/re_sprite_v02.png);
+        background-repeat: no-repeat;
+        background-position: -57px -10px;
+      }
+    }
+  }
+}
+/************************************
+    메인메뉴
+************************************/
+.menu {
+  position: relative;
+  ul {
+    &::after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+    li {
+      position: relative;
+      display: block;
+      float: left;
+      width: 110px;
+      text-align: center;
+      a {
+        color: $white;
+        line-height: 45px;
+        letter-spacing: -1px;
+        cursor: pointer;
+      }
+      &:first-child::after {
+        content: '';
+        height: 12px;
+        position: absolute;
+        right: 0px;
+        top: 17px;
+        border-right: 1px solid #fff;
+      }
+      &:nth-child(1), 
+      &:nth-child(2) {
+        background-color: #057dd1;
+      }
+    }
+  }
+  &_icon {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 68px;
+    height: 22px;
+    &_notice {
+      position: relative;
+      display: inline-block;
+      width: 19px;
+      height: 22px;
+      background-image: url(../images/re_sprite_v02.png);
+      background-repeat: no-repeat;
+      background-position: -83px -10px;
+      margin-right: 23px;
+      cursor: pointer;
+    }
+    &_burger{
+      display: inline-block;
+      width: 20px;
+      height: 16px;
+      background-image: url(../images/re_sprite_v02.png);
+      background-position: -112px -10px;
+      cursor: pointer;
+    }
+  }
+}
+#notice_number {
+  position: absolute;
+  top: -3px;
+  left: 12px;
+  width: 18px;
+  height: 14px;
+  background-color: #f7432b;
+  border-radius: 100%;
+  color: $white;
+  font-size: 11px;
+  text-align: center;
+  line-height: 14px;
+}
+/************************************
+    메인 배너
+************************************/
+.banner1 {
+  background-image: url(../images/2560x180_main_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  .sell {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-top: 25px;
+    padding-left: 10px;
+    cursor: default;
+    &_list {
+      width: 360px;
+      height: 180px;
+      &_item {
+        position: relative;
+        float: left;
+        width: 90px;
+        height: 65px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-top: 6px;
+        .sprite_image {
+          margin: 0 auto;
+          background-image: url(../images/re_sprite_v02.png);
+          background-repeat: no-repeat;
+          cursor: pointer;
+          background-position-y: -42px;
+        }
+        &:nth-child(1) .sprite_image {
+          width: 31px;
+          height: 30px;
+          background-position-x: -10px;
+        }
+        &:nth-child(2) .sprite_image {
+          width: 32px;
+          height: 28px;
+          background-position-x: -51px;
+        }
+        &:nth-child(3) .sprite_image {
+          width: 30px;
+          height: 25px;
+          background-position-x: -93px;
+        }
+        &:nth-child(4) .sprite_image {
+          width: 33px;
+          height: 28px;
+          background-position-x: -133px;
+        }
+        &:nth-child(5) .sprite_image {
+          width: 31px;
+          height: 28px;
+          background-position-x: -175px;
+        }
+        &:nth-child(6) .sprite_image {
+          width: 25px;
+          height: 28px;
+          background-position-x: -217px;
+        }
+        &:nth-child(7) .sprite_image {
+          width: 28px;
+          height: 30px;
+          background-position-x: -252px;
+        }
+        &:nth-child(8) .sprite_image {
+          width: 32px;
+          height: 31px;
+          background-position-x: -290px;
+        }
+        span {
+          position: absolute;
+          width: 100%;
+          bottom: 10px;
+          text-align: center;
+          display: block;
+          color: $white;
+          font-size: 11px;
+          line-height: 22px;
+          cursor: pointer;
+        }
+      }
+    }
+    &_setBtn {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 16px;
+      height: 15px;
+      background-image: url(../images/re_sprite_v02.png);
+      background-repeat: no-repeat;
+      background-position: -142px -10px;
+      cursor: pointer;
+    }
+  }
+  .bannerBtn {
+    float: right;
+    width: 54px;
+    height: 12px;
+    margin-top: 10px;
+    margin-right: 20px;
+    &1, &2, &3 {
+      float: left;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      border: 1px solid #000;
+      background-color: #fff;
+      margin-right: 9px;
+    }
+    &1 {
+      background-color: #057ccf;
+    }
+    &3 {
+      margin-right: 0;
+    }
+  }
+}
+
+/************************************
+    파워물품
+************************************/
+.power {
+  position: relative;
+  background-color: #f2f4f7;
+  border: none;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  h1 {
+    display: block;
+    width: 161px;
+    height: 24px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -1px;
+    span {
+      color: #057ccf;
+    }
+  }
+  a {
+    position: absolute;
+    top: 47px;
+    right: 16px;
+    color: $black3;
+    font-size: 12px;
+    &:after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-top: 1px solid $black1;
+      border-right: 1px solid $black1;
+      display: inline-block;
+      transform: rotate(45deg);
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+  }
+  &_item_wrap {
+    position: relative;
+    margin-top: 40px;
+    width: 1080px;
+    height: 220px;
+  }
+  &_item {
+    float: left;
+    width: 172px;
+    height: 100px;
+    border: 1px solid #c0c8d4;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    border-top-left-radius: 21px;
+    background-color: #fff;
+    cursor: pointer;
+    /* 호버시 리본이 적용될 수 있게 초기화 하기 */
+    &:hover {
+      border-top-left-radius: 0;
+      border: 1px solid #159efd;
+      &:after {
+        visibility: hidden;
+      }
+      >.ribbon {
+        visibility: visible;
+      }
+    }
+    &:nth-child(6), 
+    &:nth-child(12) {
+      margin-right: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 15px solid #f2f4f7;
+      border-left: 15px solid #bbb;
+      width: 0;
+      transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+    }
+    .ribbon {
+      // 박스 크기조절
+      visibility: hidden;
+      width: 45px;
+      height: 45px;
+      overflow: hidden;
+      position: absolute;
+      // 박스 위치 조절
+      top: -5px;
+      left: -6px;
+      &:before, &:after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: block;
+        border: 1px solid #159efd;
+        border-top-color: transparent;
+        border-left-color: transparent;
+      }
+      span {
+        position: absolute;
+        display: block;
+        width: 90px;
+        padding: 4px 0;
+        background-color: #159efd;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        /* 여기에서 letter-spacing을 -1로 하면 사진보다 더 가까이 붙음. 기본값이 더 자연스러운 것 같음. */
+        letter-spacing: -1px;
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: center;
+        /* 리본 이동 */
+        right: -18px;
+        top: 8px;
+        transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+      }
+    }
+    h3 {
+      // 게임명
+      display: block;
+      color: $black1;
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      padding-top: 12px;
+      height: 37px;
+      &:after {
+        // 아래 선
+        content: '';
+        border-bottom: 1px solid #d7dbe1;
+        width: 162px;
+        height: 1px;
+        position: absolute;
+        top: 37px;
+        left: 4px;
+        margin: 0 auto;
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      h3 {
+        display: block;
+        color: $blue;
+        font-size: 19px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        padding-top: 12px;
+        height: 37px;
+      }
+    }
+    // 내부의 작은 텍스트
+    p {
+      // 금액
+      margin-top: 12px;
+      margin-bottom: 5px;
+      color: $black;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      &+p {
+        // 서버명
+        color: $black;
+        font-size: 12px;
+        letter-spacing: -1px;
+        font-weight: normal;
+      }
+    }
+  }
+  &_slide {
+    width: 70px;
+    height: 10px;
+    margin: 0 auto;
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    &_btn {
+      border-radius: 50%;
+      background-color: #ccc;
+      width: 10px;
+      height: 10px;
+      float: left;
+      margin-right: 10px;
+      &:first-child {
+        background-color: #000;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/************************************
+    section 태그 공통 디자인
+************************************/
+section {
+  border: 1px solid $box3;
+  background-color: #fff;
+  position: relative;
+  float: left;
+  margin-bottom: 10px;
+  h2 {
+    display: block;
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    /* 색 관련해서 black ~ black3까지였는데 하단에서 black4가 새로 생김. */
+    color: $black1;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    padding-left: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid $box3;
+  }
+}
+/************************************
+    좌/우 버튼 - 크기는 화살표박스의 크기지만.
+    가이드에는 중간크기 꺽쇠형으로 나와있음.
+************************************/
+.normal_btn {
+  width: 37px;
+  height: 19px;
+  &_left, &_right{
+  float: left;
+  cursor: pointer;
+  background-image: url(../images/re_sprite_v02.png);
+  background-repeat: no-repeat;
+  height: 19px;
+  }
+  &_left{
+    width: 17px;
+    /* 크기가 일치하는 것. */
+    /* background-position: -168px -10px; */
+    background-position: -40px -9px;
+  }
+  &_right {
+    width: 20px;
+    /* 크기가 일치하는 것. */
+    /* background-position: -186px -10px; */
+    background-position: -56px -9px;
+  }
+}
+
+/************************************
+    플러스 버튼
+************************************/
+.plus_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 19px;
+  height: 19px;
+  background-image: url(../images/re_sprite_v02.png);
+  background-repeat: no-repeat;
+  background-position: -215px -10px;
+  cursor: pointer;
+}
+
+/************************************
+    시세정보
+************************************/
+.gInfo {
+  border: 1px solid $box3;
+  &_list {
+    display: block;
+    width: 100%;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &_item {
+      box-sizing: content-box;
+      float: left;
+      width: 114px;
+      height: 39px;
+      color: $black2;
+      font-size: 13px;
+      text-align: center;
+      line-height: 39px;
+      border-bottom: 2px solid #55524f;
+      border-right: 1px solid $box3;
+      background-color: #fff;
+      background: linear-gradient(#fff, #efeff0);
+      &:last-child {
+        border-right: 0;
+      }
+      &.on {
+        background-color: #373636;
+        background: linear-gradient(#757473, #373636);
+        color: #fff;
+        border: none;
+        height: 42px;
+        line-height: 42px;
+        position: relative;
+        top: -1px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .gInfo_recent {
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    &_price {
+      width: 165px;
+      height: 191px;
+      float: left;
+      margin-right: 25px;
+      table {
+        cursor: pointer;
+        th {
+          text-align: center;
+          line-height: 36px;
+          color: $black2;
+          font-size: 12px;
+          font-weight: bold;
+          width: 165px;
+          height: 36px;
+          border-bottom: 1px solid $box3;
+          border-right: 1px solid $box3;
+        }
+        td {
+          width: 82px;
+          height: 32px;
+          border-bottom: 1px solid $box3;
+          text-align: center;
+          line-height: 32px;
+          background-color: #eee;
+          border-right: 1px solid $box3;
+          color: $black2;
+          font-size: 12px;
+          &:nth-child(2) {
+            background-color: #fff;
+          }
+        }
+        tr.on td {
+          background-color: #fff;
+          &+td {
+            border-right: none;
+          }
+        }
+      }
+      .normal_btn {
+        margin-left: 64px;
+        margin-top: 8px;
+      }
+    }
+    &_detail {
+      color: $black2;
+      padding-top: 12px;
+      h5 {
+        border-right: 1px solid #000;
+        display: inline-block;
+        padding-right: 10px;
+        margin-bottom: 19px;
+        padding-left: 4px;
+        font-weight: bold;
+        font-size: 12px;
+        +h5 {
+          border-right: none;
+        }
+      }
+      p {
+        display: inline-block;
+        font-size: 12px;
+      }
+      &_chart {
+        float: left;
+        width: 469px;
+        height: 126px;
+        border-top: 1px solid #8e8e8e;
+        background-image: url(https://via.placeholder.com/469x126?text=Money+Chart+Sample+469x126);
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+      }
+      &_num {
+        position: relative;
+        left: -10px;
+        display: block;
+        float: left;
+        height: 11px;
+        color: $black1;
+        font-size: 11px;
+        &_item {
+          float: left;
+          margin-right: 22px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/************************************
+    마일리지
+************************************/
+.mile {
+  position: relative;
+  .normal_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  &_list {
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    &_item {
+      text-align: center;
+      float: left;
+      width: 125px;
+      height: 123px;
+      padding-top: 15px;
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: 126px;
+      }
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        border-bottom: 1px solid #dee3eb;
+      }
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(5) {
+        border-right: 1px solid #dee3eb;
+      }
+      span {
+        color: $black2;
+        font-size: 12px;
+        letter-spacing: -1px;
+      }
+      .list_image {
+        height: 72px;
+        margin: 12px auto 0;
+        background-image: url(../images/sp_main.png);
+        background-repeat: no-repeat;
+      }
+      &:nth-child(1) .list_image{ 
+        width: 90px;
+        background-position: -10px -82px;
+      }
+      &:nth-child(2) .list_image{ 
+        width: 95px;
+        // 이미지가 존재하지 않아 문화상품권 사진으로 대체
+        background-position: -6px -82px;
+      }
+      &:nth-child(3) .list_image{ 
+        width: 88px;
+        background-position: -215px -82px;
+      }
+      &:nth-child(4) .list_image{ 
+        width: 96px;
+        background-position: -313px -82px;
+      }
+      &:nth-child(5) .list_image{ 
+        width: 98px;
+        background-position: -419px -82px;
+      }
+      &:nth-child(6) .list_image{ 
+        width: 79px;
+        background-position: -527px -82px;
+      }
+    }
+  }
+}
+/************************************
+    핫게임
+************************************/
+.hot {
+  &_list {
+    margin-top: 15px;
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    &_item {
+      width: 107px;
+      float: left;
+      margin-right: 28px;
+      .item_image {
+        width: 106px;
+        height: 130px;
+        margin-bottom: 10px;
+        border: 1px solid #a7a7a7;
+        background-repeat: no-repeat;
+        background-position: top center;
+        cursor: pointer;
+      }
+      &:first-child {
+        margin-left: 23px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(1) .item_image {
+        background-image: url(../images/hot_game01.jpg);
+      }
+      &:nth-child(1) .item_image {
+        background-image: url(../images/hot_game01.jpg);
+      }
+      &:nth-child(2) .item_image {
+        background-image: url(../images/hot_game01.jpg);
+      }
+      &:nth-child(3) .item_image {
+        background-image: url(../images/hot_game01.jpg);
+      }
+      &:nth-child(4) .item_image {
+        background-image: url(../images/hot_game01.jpg);
+      }
+      &:nth-child(5) .item_image {
+        background-image: url(../images/hot_game01.jpg);
+        
+      }
+    }
+    p {
+      color: $black2;
+      font-size: 12px;
+      letter-spacing: -1px;
+      text-align: center;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+    .star {
+      position: relative;
+      width: 60px;
+      height: 12px;
+      background-image: url(../images/re_sprite_v02.png);
+      background-repeat: no-repeat;
+      width: 100%;
+      background-position: -244px -24px;
+      overflow: hidden;
+
+      &_image {
+        position: absolute;
+        width: 60px;
+        height: 12px;
+        background-image: url(../images/re_sprite_v02.png);
+        background-repeat: no-repeat;
+        background-position: -244px -10px;
+      }
+      .point {
+        color: $black;
+        font-size: 11px;
+        font-weight: bold;
+        /* 별의 크기가 60이니 5픽셀 옆으로 떨어진 것은 맞지만 더 좋은 방법 찾아보기. */
+        position: absolute;
+        left: 65px;
+        top: 0;
+        display: inline-block;
+      }
+    }
+    &_item:nth-child(1) .star_image {
+      left: -12px;
+    }
+    &_item:nth-child(2) .star_image {
+      left: -24px;
+    }
+    &_item:nth-child(3) .star_image {
+      left: -36px;
+    }
+    &_item:nth-child(4) .star_image {
+      left: -12px;
+    }
+    &_item:nth-child(5) .star_image {
+      left: -24px;
+    }
+    .cup, .sell {
+      float: left;
+      margin-top: 12px;
+      width: 51px;
+      height: 18px;
+      letter-spacing: -1px;
+      font-size: 11px;
+      text-align: center;
+      line-height: 18px;
+      cursor: pointer;
+    }
+    .cup {
+      color: #6a8198;
+      border: 1px solid #6a8198;
+      margin-right: 5px;
+      text-align: center;
+    }
+    .sell {
+      color: #fff;
+      background-color: #a9bcce;
+      text-align: center;
+    }
+  }
+
+}
+/************************************
+    게임순위
+************************************/
+.rank {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  &_list_left, &_list_right {
+    float: left;
+    width: 160px;
+    margin-top: 19px;
+  }
+  &_list_left {
+    margin-left: 20px;
+    .rank_list_item:first-child .rank_num {
+      background-color: #ff4747;
+      border: 1px solid #ea3f3f;
+    }
+  }
+  &_list_right {
+    margin-left: 18px;
+  }
+  &_list_item {
+    width: 160px;
+    float: left;
+    .rank_num {
+      float: left;
+      width: 17px;
+      height: 17px;
+      text-align: center;
+      line-height: 15px;
+      background-color: #bebebe;
+      border: 1px solid #a8a8a8;
+      color: #fff;
+      font-size: 11px;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-bottom: 11px;
+    }
+    .rank_name {
+      cursor: pointer;
+      float: left;
+      color: $black2;
+      font-size: 13px;
+      line-height: 16px;
+
+    }
+    .rank_icon {
+      float: right;
+      margin-top: 4px;
+      margin-right: 10px;
+      width: 7px;
+      height: 9px;
+      background-image: url(../images/re_sprite_v02.png);
+      background-repeat: no-repeat;
+      background-position-y: -10px;
+      background-position-x: -348px;
+      &_up {
+        background-position-x: -314px;
+      }
+      &_down {
+        background-position-x: -331px;
+      }
+    }
+  }
+}
+/************************************
+    배너2
+************************************/
+.banner2 {
+  background-image: url(../images/380x55_banner.jpg);
+  background-repeat: no-repeat;
+}
+/************************************
+    배너3
+************************************/
+.banner3 {
+  background-image: url(../images/1080x80_banner.jpg);
+  background-repeat: no-repeat;
+}
+/************************************
+    게임매니아
+************************************/
+.mania {
+  &_banner {
+    position: relative;
+    width: 348px;
+    height: 143px;
+    background-image: url(../images/348x143_banner.jpg);
+    background-repeat: no-repeat;
+    .banner_slide {
+      position: absolute;
+      width: 55px;
+      height: 9px;
+      left: 15px;
+      bottom: 15px;
+      .slide_btn {
+        float: left;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 5px;
+        &:first-child {
+          background-color: #b10716;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+/************************************
+    매니아서비스
+************************************/
+.service {
+  .normal_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  &_image {
+    width: 328px;
+    height: 143px;
+    background-image: url(../images/img_service01.jpg);
+    background-repeat: no-repeat;
+  }
+}
+/************************************
+    최신 게임뉴스
+************************************/
+.news {
+  &_list {
+    width: 100%;
+    height: 143px;
+    display: block;
+    padding-left: 15px;
+    padding-top: 17px;
+    padding-right: 20px;
+    
+    &_item {
+      width: 100%;
+      // 12로 했을 때 사진과 가장 비슷함.
+      margin-bottom: 12px;
+      height: auto;
+      a {
+        color: $black2;
+        font-size: 12px;
+        letter-spacing: -1px;
+        display: inline-block;
+        width: 196px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        line-height: 15px;
+      }
+      span {
+        float: right;
+        color: $black3;
+        font-size: 11px;
+        letter-spacing: -1px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/************************************
+    aside 태그 공통적용.
+************************************/
+aside {
+  float: left;
+  margin-bottom: 10px;
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: $black1;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+}
+
+/************************************
+    전화 상담안내
+************************************/
+.call {
+  padding-left: 10px;
+  span {
+    font-family: tahoma;
+    font-size: 38px;
+    color: #fc3353;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+  }
+  b {
+    color: $black;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+}
+/************************************
+    공지사항
+************************************/
+.notice {
+  padding-left: 10px;
+  &_list {
+    &_item {
+      margin-bottom: 13px;
+      color: $black1;
+      font-size: 12px;
+      letter-spacing: -1px;
+    }
+  }
+}
+/************************************
+    하단 퀵 메뉴
+************************************/
+.quick {
+  padding-top: 15px;
+  padding-left: 15px;
+  &_list {
+    height: 100%;
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    &_item {
+      float: left;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .quick_image {
+        width: 64px;
+        height: 64px;
+        background-image: url(../images/sp_main.png);
+        background-repeat: no-repeat;
+        background-position-y: -10px;
+        cursor: pointer;
+      }
+      &:nth-child(1) .quick_image {
+        background-position-x: -10px;
+      }
+      &:nth-child(2) .quick_image {
+        background-position-x: -84px;
+      }
+      &:nth-child(3) .quick_image {
+        background-position-x: -158px;
+      }
+      &:nth-child(4) .quick_image {
+        background-position-x: -232px;
+      }
+      .quick_name {
+        color: $black2;
+        font-size: 11px;
+        letter-spacing: -1px;
+        text-align: center;
+        margin-top: 13px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/************************************
+    footer
+************************************/
+.footer {
+  &_link {
+    &_list {
+      display: block;
+      height: 43px;
+      &_item {
+        display: inline-block;
+        margin-right: 35px;
+        a {
+          text-decoration: none;
+          color: $white;
+          font-size: 12px;
+          letter-spacing: -1px;
+          line-height: 43px;
+          
+        }
+        &:nth-child(3) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &_info {
+
+    .fLogo {
+      float: left;
+      height: 31px;
+      margin-top: 40px;
+      margin-right: 40px;
+    }
+    .fInfo {
+      float: left;
+      margin-top: 25px;
+      span, address {
+        font-size: 11px;
+        color: #b0b0b0;
+        letter-spacing: -1px;
+        display: inline-block;
+        line-height: 15px;
+      }
+    }
+  }
+}
